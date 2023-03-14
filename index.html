@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        brandPrimary: '#242929',
+                        brandSecondary: '#3e4242',
+                        brandborder: '#9ea5a5',
+                        brandBg: '#f6f8f8',
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Alex Turnwall | Single Page Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-brandBg">
+    <div class=" m-auto">
+        <!-- Leptop Header -->
+        <header class="main-header public-header max-[992px]:hidden">
+            <nav class="main-nav h-20 flex items-center">
+                <div class="container ">
+                    <div class="grid grid-cols-12 h-20  items-center border-b border-brandborder">
+                        <div class="nav-brand col-span-2 text-brandPrimary font-bold">
+                            <a href="" class="brand-logo text-lg ">
+                                <span class="name">Alex Turnwall</span>
+                            </a>
+                        </div>
+                        <div class="nav-menu col-span-10  text-brandSecondary">
+                            <div class="main-menu-container">
+                                <ul class="main-menu list-none flex text-brandSecondary">
+                                    <li class="menu-item m-4"><a href="#" class="">Work</a></li>
+                                    <li class="menu-item m-4"><a href="#" class="">Blog</a></li>
+                                    <li class="menu-item m-4"><a href="#" class="">About</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- Mobile Header -->
+        <header class="mobile-header min-[993px]:hidden  h-[3.8rem] flex items-center border-b border-brandborder">
+            <div class="container mobile-header-inner text-brandPrimary font-bold">
+                <a href="" class="brand-logo text-lg ">
+                    <span class="name">Alex Turnwall</span>
+                </a>
+            </div>
+
+            <a class="navbar-toggle absolute right-0 block z-50 bg-[#2d69ad] overflow-hidden  pointer  max-[767px]:bottom-0 min-[767px]:top-0" onclick="toggleNav()"> <i class="fa fa-solid fa-bars text-[1.2rem] text-[#b7b8b8] hover:text-[#F5F8F7]"></i></a>
+        </header>
+        
+        <!-- Mobile Sidebar -->
+        <div id="sidebar" class="sidebar bg-brandBg top-0 right-0 z-[1] overflow-hidden fixed w-0 h-full min-[992px]:hidden">
+            <div class="ml-4">
+                <div class="grid grid-cols-12 h-20  items-center border-b border-brandborder">
+                    <div class="nav-brand col-span-12 text-brandPrimary font-bold">
+                        <a href="" class="brand-logo text-base ">
+                            <span class="name">Alex Turnwall</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-menu col-span-10  text-brandSecondary">
+                    <div class="main-menu-container">
+                        <ul class="main-menu list-none  text-brandSecondary">
+                            <li class="menu-item pt-4 pb-4 border-b border-brandborder"><a href="#" class="">Work</a></li>
+                            <li class="menu-item pt-4 pb-4 border-b border-brandborder"><a href="#" class="">Blog</a></li>
+                            <li class="menu-item pt-4 pb-4 border-b border-brandborder"><a href="#" class="">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

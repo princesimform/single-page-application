@@ -1,0 +1,39 @@
+:root {
+    --brand-primary-color: #242929;
+}
+
+.container {
+    width: 88vw !important;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1400px !important;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.brand-logo {
+    font-size: 1.2rem;
+}
+.menu-item {
+    font-size: 1rem;
+}
+.navbar-toggle {
+    height: 60px;
+    width: 60px;
+    transition: all 0.4s ease;
+}
+
+
+.navbar-toggle .fa {
+    padding: 21px;
+    transition: all 0.4s ease;
+}
+.sidebar {
+    transition: 0.5s;
+}
+
+.active {
+    box-shadow: -60px 0 60px 30px rgb(0 0 0 / 60%);
+}
+.sidebar a {
+    transition: 0.3s;
+}
